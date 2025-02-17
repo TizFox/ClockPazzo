@@ -1,0 +1,176 @@
+/* Palette: https://colorhunt.co/palette/faf6e3d8dbbdb59f782a3663 */
+
+:root {
+	--bg-color: 			#A6AEBF; /*8DBBD;*/ 
+	
+	--primary-color: 		#2A3663; /*1A1A1D;*/ 
+	--secondary-color: 		#FAF6E3; /*C5D3E8;*/
+
+	--primary-text-color: 	#90A0E0;
+	--secondary-text-color:	#203070;
+
+	--btn-start:			var(--secondary-color);
+	--btn-start-mod:		var(--bg-color);
+	--btn-start-text: 		var(--primary-color);
+	--btn-start-text-mod:	var(--primary-color);
+
+	--btn-set:				var(--secondary-color);
+	--btn-set-mod:			var(--bg-color);
+	--btn-set-text: 		var(--primary-color);
+	--btn-set-text-mod: 	var(--primary-color);
+
+	--btn-pause:			var(--secondary-color);
+	--btn-pause-mod:		var(--bg-color);
+	--btn-pause-text: 		var(--primary-color);
+	--btn-pause-text-mod: 	var(--primary-color);
+
+	--btn-stop:	 			var(--secondary-color);
+	--btn-stop-mod:	 		var(--bg-color);
+	--btn-stop-text:		var(--primary-color);
+	--btn-stop-text-mod: 	var(--primary-color);
+
+	--clock-title-size: 3.5rem;
+	--primary-size: 2.8rem;
+	--secondary-size: 1.8rem;
+	--tertiary-size: 1.3rem;
+	--base-size: 0.8rem;
+
+	--card-min-height: 5rem;
+	--card-body-min-height: 10rem;
+	--card-body-border-size: 8px;
+}
+
+body {
+	text-align: center;
+	font-size: var(--base-size);
+
+	font-family: 'Fira Code';
+	font-weight: 400;
+
+	background-color: var(--bg-color);
+	color: var(--secondary-text-color);
+}
+
+.container-fluid {
+	margin: 3% 0;
+}
+
+
+/* General Style of a Card Component */
+.card {
+	/*height: 12rem;*/
+	border: none;
+	margin: 1%;
+}
+
+.card-header, .card-footer {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+
+	min-height: var(--card-min-height);
+
+	background-color: var(--primary-color);
+	color: var(--primary-text-color);
+}
+
+.card-body {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+
+	min-height: var(--card-body-min-height);
+
+	background-color: var(--secondary-color);
+	color: var(--secondary-text-color);
+
+	/* solid ridge groove */
+	border-left: var(--bg-color) solid var(--card-body-border-size);
+	border-right: var(--bg-color) solid var(--card-body-border-size);
+}
+
+/* Specifics */
+.clock-title {
+	font-size: var(--clock-title-size);
+	font-family: 'Tsukimi Rounded';
+	font-weight: 700;
+}
+
+.title {
+	font-size: var(--secondary-size);
+	font-family: 'Tsukimi Rounded';
+	font-weight: 600;
+}
+
+.main-text {
+	font-size: var(--primary-size);
+	font-family: 'Tsukimi Rounded';
+	font-weight: 600;
+}
+
+.input-group, .form-select {
+	font-family: 'Fira Code';
+}
+
+/* Buttons */
+.btn {
+	font-weight: 600;
+}
+
+.start-btn {
+	background-color: var(--btn-start) !important;
+	color: var(--btn-start-text) !important;
+}
+.start-btn:hover, .start-btn:active {
+	background-color: var(--btn-start-mod) !important;
+	color: var(--btn-start-text-mod) !important;
+}
+
+.set-btn {
+	background-color: var(--btn-set) !important;
+	color: var(--btn-set-text) !important;
+}
+.set-btn:hover, .set-btn:active {
+	background-color: var(--btn-set-mod) !important;
+	color: var(--btn-set-text-mod) !important;
+}
+
+.pause-btn {
+	background-color: var(--btn-pause) !important;
+	color: var(--btn-pause-text) !important;
+}
+.pause-btn:hover, .pause-btn:active {
+	background-color: var(--btn-pause-mod) !important;
+	color: var(--btn-pause-text-mod) !important;
+}
+
+.stop-btn {
+	background-color: var(--btn-stop) !important;
+	color: var(--btn-stop-text) !important;
+}
+.stop-btn:hover, .stop-btn:active {
+	background-color: var(--btn-stop-mod) !important;
+	color: var(--btn-stop-text-mod) !important;
+}
+
+/* Progress Bar */
+.progress-bar-wrapper {
+	width: 100%;
+}
+.progress {
+	width: 90%;
+	height: var(--primary-size);
+	background-color: var(--bg-color) !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+.progress-bar {
+	font-size: var(--tertiary-size);
+	color: var(--primary-text-color) !important;
+	background-color: var(--primary-color) !important;
+}
+.progress-bar-label {
+	font-size: var(--base-size);
+}
